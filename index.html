@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+
+	<body>
+		<div class="main-wrapper">
+			<header class="header">
+				<sapn class="back">
+					<i class="fa fa-angle-left"></i> 返回
+				</sapn>
+				<h1>沽清</h1>
+				<sapn class="sellOut">同步售罄</span>
+			</header>
+			<div class="content-wrapper">
+				<div class="content-left">
+					<div class="pocketMenu menu">
+						<!--<ul>
+							<li>序号</li>
+							<li>品名</li>
+							<li>可售数</li>
+							<li>操作</li>
+						</ul>-->
+						<ul class="clearfloat">
+							<li class="col-md-3 col-sm-3 col-xs-6 ">序号</li>
+							<li class="col-md-3 col-sm-3 col-xs-6 ">品名</li>
+							<li class="col-md-3 col-sm-3 col-xs-6 ">可售数</li>
+							<li class="col-md-3 col-sm-3 col-xs-6 ">操作</li>
+						</ul>
+					</div>
+					<ul class="selectedFoodList">
+						<li class="selectedFoodItem selected">
+							<span class="digit">1</span>
+							<span class="foodName">东吴焖肉</span>
+							<span class="foodNumber">18份</span>
+							<div class="set">
+								<a href="">修改</a>
+								<a href="">删除</a>
+							</div>
+						</li>
+						<li class="selectedFoodItem table-tr">
+							<span class="digit">2</span>
+							<span class="foodName">萝卜牛腩</span>
+							<span class="foodNumber">18份</span>
+							<div class="set">
+								<a href="">修改</a>
+								<a href="">删除</a>
+							</div>
+						</li>
+						<li class="selectedFoodItem table-tr">
+							<span class="digit">3</span>
+							<span class="foodName">青椒肉丝</span>
+							<span class="foodNumber">18份</span>
+							<div class="set">
+								<a href="">修改</a>
+								<a href="">删除</a>
+							</div>
+						</li>
+						<li class="selectedFoodItem table-tr">
+							<span class="digit">4</span>
+							<span class="foodName">空心菜</span>
+							<span class="foodNumber">18份</span>
+							<div class="set">
+								<a href="">修改</a>
+								<a href="">删除</a>
+							</div>
+						</li>
+					</ul>
+					<div class="leftFooter">
+						<nav aria-label="..." class="col-md-12 col-sm-12 ">
+						<ul class="pagination ">
+							<li>
+								<a href="# ">上一页</a>
+							</li>
+							<li>
+								<a href="# ">下一页</a>
+							</li>
+						</ul>
+					</nav>
+					</div>
+					
+				</div>
+				<div class="content-right">
+					<div class="foodMenu menu">
+						<!--<ul>
+							<li class="foodMenuSelected">盖浇饭系列</li>
+							<li class="">砂锅系列</li>
+							<li class="">炒面炒饭</li>
+							<li class="">煲汤类</li>
+							<li class="">特色小吃</li>
+							<li class="">饮料</li>
+						</ul>-->
+						<ul class="clearfloat">
+							<li class="col-md-2 col-sm-3 col-xs-6 foodMenuSelected"  data-name="gaijiaofan">盖浇饭系列</li>
+							<li class="col-md-2 col-sm-3 col-xs-6" data-name="shaguo">砂锅系列</li>
+							<li class="col-md-2 col-sm-3 col-xs-6 ">炒面炒饭</li>
+							<li class="col-md-2 col-sm-3 col-xs-6 ">煲汤类</li>
+							<li class="col-md-2 col-sm-3 col-xs-6 ">特色小吃</li>
+							<li class="col-md-2 col-sm-3 col-xs-6 ">饮料</li>
+							<div class="arrow">
+								
+							</div>
+						</ul>
+						
+					</div>
+					<ul class="foodList">
+						<!--<li class="col-md-2 col-sm-3 col-xs-6 selectedFood">
+							<div class="dot">18</div>
+							<div class="name ">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6 selectedFood">
+							<div class="dot">18</div>
+							<div class="name ">农家土鸡汤</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6 selectedFood">
+							<div class="dot">18</div>
+							<div class="name ">红烧甲鱼</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6 selectedFood">
+							<div class="dot">18</div>
+							<div class="name ">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6 selectedFood">
+							<div class="dot">18</div>
+							<div class="name ">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>
+						<li class="col-md-2 col-sm-3 col-xs-6">
+							<div class="name">东吴焖肉</div>
+							<div class="price">28/份</div>
+						</li>-->
+					</ul>
+					<div class="rightFooter">
+						<div class=" col-md-6 col-sm-6">
+							<form class="search">
+								<input placeholder="请输入菜名"></input>
+								<a href="" class="submit"></a>
+							</form>
+						</div>
+
+						<!--<div class="pager">
+						<a href="">上一页</a>
+						<a href="">下一页</a>
+					</div>-->
+						<!--<nav aria-label="Page navigation">
+						<ul class="pagination">
+							<li>
+								<a href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">上一页</a>
+							</li>
+							<li>
+								<a href="#">下一页</a>
+							</li>
+							<li>
+								<a href="#" aria-label="Next">
+									<span aria-hidden="true">&raquo;</span>
+								</a>
+							</li>
+						</ul>
+					</nav>-->
+						<nav aria-label="..." class="col-md-6 col-sm-6 ">
+						<ul class="pagination ">
+							<li>
+								<a href="# ">上一页</a>
+							</li>
+							<li>
+								<a href="# ">下一页</a>
+							</li>
+						</ul>
+					</nav>
+					</div>
+				</div>
+			</div>
+			<footer class="footer ">
+				<ul>
+					<li>员工：某某某</li>
+					<li>东吴面馆风津南路店</li>
+					<li>云连接</li>
+					<li>厨打</li>
+					<li>0512-62626244</li>
+					<li>2018/6/12 12:00 星期五</li>
+				</ul>
+			</footer>
+		</div>
+	</body>
+	<script type="text/javascript " src="js/jquery-3.3.1.min.js "></script>
+	<script type="text/javascript " src="js/bootstrap.min.js "></script>
+	<script type="text/javascript " src="js/index.js "></script>
+
+</html>
