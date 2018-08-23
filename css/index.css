@@ -64,6 +64,7 @@ body {
 .content-left {
 	position: relative;
 	width: 40%;
+	/*width:500px;*/
 	height: 100%;
 	border-right: 1px solid #c7c7c7;
 }
@@ -109,7 +110,11 @@ body {
 
 /*左侧列表内容*/
 
-.selectedFoodList {}
+.selectedFoodList {
+	height:500px;
+	overflow: hidden;
+	
+}
 
 .selectedFoodItem {
 	display: flex;
@@ -119,6 +124,7 @@ body {
 	align-items: center;
 	height: 50px;
 	border-bottom: 1px solid #c7c7c7;
+	transition:transform 1s linear;
 }
 
 .selectedFoodItem.selected {
@@ -153,7 +159,9 @@ body {
 
 .content-right {
 	position: relative;
-	width: 60%;
+	/*width: 60%;*/
+	/*width:100%;*/
+	flex:1;
 	height: 100%;
 
 }
